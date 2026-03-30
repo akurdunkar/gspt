@@ -73,7 +73,7 @@ and log in with your Spotify account credentials.
    ![Create an App](./extras/create.png)
 
 3. Give your application a name and description, and agree to the terms of
-   service. In the `Redirect URI` section add `http://localhost:8080/callback`
+   service. In the `Redirect URI` section add `http://127.0.0.1:8888/callback`
    as a callback URL. This is necessary for the OAuth 2.0 authentication flow
    to work. Click on "Create" to proceed. ![Create an App Form](./extras/create_form.png)
 

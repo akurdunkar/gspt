@@ -38,7 +38,7 @@ func openbrowser(url string) error {
 }
 
 var (
-	redirectURI = "http://localhost:8080/callback"
+	redirectURI = "http://127.0.0.1:8888/callback"
 	scopes      = []string{
 		_auth.ScopeUserLibraryRead,
 		_auth.ScopePlaylistModifyPublic,
@@ -97,7 +97,7 @@ func InitClient() error {
 		})
 
 		go func() {
-			err := http.ListenAndServe(":8080", nil)
+			err := http.ListenAndServe(":8888", nil)
 			if err != nil {
 				log.Fatal(err)
 				ch <- &payload{nil, err}
